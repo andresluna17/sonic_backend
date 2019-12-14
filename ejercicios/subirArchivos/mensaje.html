@@ -1,0 +1,29 @@
+<!--1. Subir archivos haciendo uso de formularios HTML y la variable global $_FILES de PHP-->
+<html>
+    <head><title>Subir archivos</title>
+    </head>
+    <body>
+        <form action="recibido.php" enctype="multipart/form-data" method="POST" >
+            <table align="center">
+                <tr>
+                    <td colspan=2><hl align="center">Subir Archivo</hl><hr></td>
+                </tr>
+                <tr>
+                    <td>A:</td>
+                    <td><input type="text" name="destino" ></td>
+                </tr>
+                <tr>
+                    <td>Mensaje:</td>
+                    <td><textarea name="mensaje" cols="30" rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Archivo adjunto:</td>
+                    <td><input type="file" name="adjunto" title="Seleccione el archivo a enviar"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reestablecer"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    <html>
